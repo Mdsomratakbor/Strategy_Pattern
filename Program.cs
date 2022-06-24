@@ -6,7 +6,8 @@ namespace Strategy_Pattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Duck duck = new MallarDuck();
+            duck.Display();
         }
     }
 }
