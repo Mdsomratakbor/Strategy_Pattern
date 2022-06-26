@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Strategy_Pattern
 {
-    public class RedheadDuck : Duck
+    public class ADDuck : Duck
     {
         public override void Display()
         {
-            Console.WriteLine("Red head Duck");
+            Console.WriteLine("ADDuck Display");
         }
 
         public override void Fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("ADDuck Cann't Fly");
         }
 
         public override void Swim()
         {
-           
+            Console.WriteLine("ADDuck Cann't Swim");
         }
     }
 }

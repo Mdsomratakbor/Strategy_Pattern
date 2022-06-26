@@ -13,14 +13,14 @@ namespace Strategy_Pattern
             Console.WriteLine("Mallar Duck");
         }
 
-        public override void Quack()
+        public override void Fly()
         {
             throw new NotImplementedException();
         }
 
         public override void Swim()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

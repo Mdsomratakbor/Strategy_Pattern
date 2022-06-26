@@ -8,8 +8,13 @@ namespace Strategy_Pattern
 {
     public abstract class Duck
     {
-        public abstract void Quack();
+        public virtual void Quack() {
+
+            Console.WriteLine("Duck Sound : Quack, Quack");
+        }
         public abstract void Swim();
+        public abstract void Fly();
         public abstract void Display();
+      
     }
 }
