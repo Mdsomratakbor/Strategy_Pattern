@@ -13,10 +13,6 @@ namespace Strategy_Pattern
             Console.WriteLine("Red head Duck");
         }
 
-        public override void Fly()
-        {
-            throw new NotImplementedException();
-        }
 
         public override void Swim()
         {

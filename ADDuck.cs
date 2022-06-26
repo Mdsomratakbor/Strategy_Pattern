@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Strategy_Pattern.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +12,6 @@ namespace Strategy_Pattern
         public override void Display()
         {
             Console.WriteLine("ADDuck Display");
-        }
-
-        public override void Fly()
-        {
-            Console.WriteLine("ADDuck Cann't Fly");
         }
 
         public override void Swim()
