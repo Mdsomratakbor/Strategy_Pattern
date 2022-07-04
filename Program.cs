@@ -16,6 +16,8 @@ namespace Strategy_Pattern
             duck.SetFlyBehaviour(new  FlyWithWings());
             duck.SetQuackBehavior(new  Squack());
             duck.PerformFly();
+            duck.SetFlyBehaviour(new RocketFly());
+            duck.PerformFly();
             duck.PerformQuack();
             duck.Swim();
 
@@ -23,6 +25,10 @@ namespace Strategy_Pattern
             = ConsoleColor.Red;
             Console.WriteLine("\n==== Redhead Duck Info ====");
             Duck duck2 = new RedheadDuck();
+            duck2.SetFlyBehaviour(new FlyNoWayNew());
+            duck2.SetQuackBehavior(new Squack());
+            duck2.PerformFly();
+            duck2.PerformQuack();
             duck2.Display();
 
             duck2.Swim();
@@ -45,7 +51,6 @@ namespace Strategy_Pattern
             Console.WriteLine("\n==== AC Duck Info ====");
             Duck duck5 = new ACDuck();
             duck5.Display();
-
             duck5.Swim();
 
 
